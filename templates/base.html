@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Developer Portfolio{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<header class="bg-indigo-600 text-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-6">
+        <h1 class="text-2xl font-bold">Developer Portfolio</h1>
+        <nav class="space-x-4">
+            <a href="/" class="hover:text-gray-300">Главная</a>
+            <a href="/projects/" class="hover:text-gray-300">Проекты</a>
+            <a href="/contact/" class="hover:text-gray-300">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container mx-auto py-12">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="bg-gray-800 text-white py-6 text-center mt-20">
+    &copy; 2025 Developer Portfolio. Все права защищены.
+</footer>
+
+</body>
+</html>
